@@ -1,0 +1,15 @@
+[package]
+name = "blockverse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "0.4"
+
+[profile.dev]
+opt-level = 3
+
+[package.metadata.android]
+package_name = "rust.blockverse"
+label = "BlockVerse"
+build_targets = ["armv7-linux-androideabi", "aarch64-linux-android"]
